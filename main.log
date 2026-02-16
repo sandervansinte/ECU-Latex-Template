@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  16 FEB 2026 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  16 FEB 2026 13:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -748,7 +748,7 @@ Package glossaries Info: Writing glossary file main.glo-abr on input line 46.
 ) (./1.Metadata/acronyms-definitions.tex)
 \@quotelevel=\count503
 \@quotereset=\count504
- (./main.aux (./2.Frontmatter/declaration_page.aux) (./2.Frontmatter/abstract.aux) (./2.Frontmatter/toc.aux) (./2.Frontmatter/loa.aux) (./2.Frontmatter/lot.aux) (./2.Frontmatter/lof.aux) (./3.Mainmatter/i.introduction.aux) (./3.Mainmatter/ii.methods.aux) (./3.Mainmatter/iii.results.aux) (./3.Mainmatter/iv.discussion.aux) (./3.Mainmatter/v.conclusions.aux) (./4.Backmatter/references.aux) (./5.Appendix/appendix_a.aux))
+ (./main.aux (./2.Frontmatter/declaration_page.aux) (./2.Frontmatter/abstract.aux) (./2.Frontmatter/toc.aux) (./2.Frontmatter/loa.aux) (./2.Frontmatter/los.aux) (./2.Frontmatter/lot.aux) (./2.Frontmatter/lof.aux) (./3.Mainmatter/i.introduction.aux) (./3.Mainmatter/ii.methods.aux) (./3.Mainmatter/iii.results.aux) (./3.Mainmatter/iv.discussion.aux) (./3.Mainmatter/v.conclusions.aux) (./4.Backmatter/references.aux) (./5.Appendix/appendix_a.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -873,7 +873,7 @@ Package hyperref Info: Link coloring OFF on input line 10.
 \openout8 = `main.out'.
 
  (./2.Frontmatter/titlepage.tex
-<6.Figures/ECU-LOGO_PRIMARY_RGB.png, id=88, 565.6332pt x 448.5558pt>
+<6.Figures/ECU-LOGO_PRIMARY_RGB.png, id=92, 565.6332pt x 448.5558pt>
 File: 6.Figures/ECU-LOGO_PRIMARY_RGB.png Graphic file (type png)
 <use 6.Figures/ECU-LOGO_PRIMARY_RGB.png>
 Package pdftex.def Info: 6.Figures/ECU-LOGO_PRIMARY_RGB.png  used on input line 7.
@@ -893,7 +893,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `2.Frontmatter/declaration_page.aux'.
 
  (./2.Frontmatter/declaration_page.tex
-<6.Figures/SMHS-LOGO_PRIMARY_RGB.png, id=100, 616.9449pt x 224.037pt>
+<6.Figures/SMHS-LOGO_PRIMARY_RGB.png, id=104, 616.9449pt x 224.037pt>
 File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
 <use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
 Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 32.
@@ -981,6 +981,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
+\openout2 = `2.Frontmatter/los.aux'.
+
+ (./2.Frontmatter/los.tex (./main.sls))
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 18.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[5
+
+
+
+]
 \openout2 = `2.Frontmatter/lot.aux'.
 
  (./2.Frontmatter/lot.tex (./main.lot)
@@ -1000,7 +1020,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
 
-[5
+[6
 
 
 
@@ -1024,7 +1044,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
 
-[6
+[7
 
 
 
@@ -1196,30 +1216,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-] (./main.aux (./2.Frontmatter/declaration_page.aux) (./2.Frontmatter/abstract.aux) (./2.Frontmatter/toc.aux) (./2.Frontmatter/loa.aux) (./2.Frontmatter/lot.aux) (./2.Frontmatter/lof.aux) (./3.Mainmatter/i.introduction.aux) (./3.Mainmatter/ii.methods.aux) (./3.Mainmatter/iii.results.aux) (./3.Mainmatter/iv.discussion.aux) (./3.Mainmatter/v.conclusions.aux) (./4.Backmatter/references.aux) (./5.Appendix/appendix_a.aux))
+] (./main.aux (./2.Frontmatter/declaration_page.aux) (./2.Frontmatter/abstract.aux) (./2.Frontmatter/toc.aux) (./2.Frontmatter/loa.aux) (./2.Frontmatter/los.aux) (./2.Frontmatter/lot.aux) (./2.Frontmatter/lof.aux) (./3.Mainmatter/i.introduction.aux) (./3.Mainmatter/ii.methods.aux) (./3.Mainmatter/iii.results.aux) (./3.Mainmatter/iv.discussion.aux) (./3.Mainmatter/v.conclusions.aux) (./4.Backmatter/references.aux) (./5.Appendix/appendix_a.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 588169B886534876151FB91903280725;2017.
+(rerunfilecheck)             Checksum: D3B3B547E31BEFAA7BCA9B7E74FDBAA8;2165.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31034 strings out of 467538
- 604004 string characters out of 5423725
- 1678710 words of memory out of 5000000
- 59459 multiletter control sequences out of 15000+600000
+ 31104 strings out of 467538
+ 605328 string characters out of 5423725
+ 1680926 words of memory out of 5000000
+ 59516 multiletter control sequences out of 15000+600000
  638434 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,15n,101p,2644b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (15 pages, 297146 bytes).
+Output written on main.pdf (16 pages, 296832 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
