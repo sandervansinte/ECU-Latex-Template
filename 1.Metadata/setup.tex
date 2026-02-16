@@ -1,0 +1,67 @@
+% ------------------------------------------------------------
+% Edit these according to your specific specific requirements
+
+\graphicspath{./6.Figures/} % Set the path for figures
+\def\titlepagelogo{6.Figures/ECU-LOGO_PRIMARY_RGB.png} % Set the path for title page logo
+\def\headerlogo{6.Figures/SMHS-LOGO_PRIMARY_RGB.png} % Set the path for logo
+
+\addbibresource{C:/Users/sande/OneDrive/Documents/Zotero/bibliography.bib} % Set the path for bibliography file
+
+% Define document margins
+\geometry{
+    left=3cm,
+    right=3cm,
+    top=3cm,
+    bottom=3cm
+} 
+
+% ------------------------------------------------------------
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=3cm]{\headerlogo}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+\makeatletter
+    \let\thetitle\@title
+    \let\theauthor\@author
+\makeatother
+
+\renewcommand{\contentsname}{Table of Contents}
+
+% custom gls list style
+\newglossarystyle{newglsstyle}{
+  \setglossarystyle{list}
+  \renewcommand{\glossentry}[2]{
+    \item[\glsentryitem{##1}\glstarget{##1}{\glossentryname{##1}}]
+    \glossentrydesc{##1}
+    \ifglshasfield{symbol}{##1}{\space (\glossentrysymbol{##1})}{}%
+    \unskip\dotfill\ ##2
+  }
+}
+\setabbreviationstyle{long-short}
+\setglossarystyle{newglsstyle}
+\makeglossaries
+
+\urlstyle{same}
+
+\newcommand{\submissiondate}{\submissionmonth~\submissionyear}
+
+\newcommand{\type}{report}
+\newcommand{\applydoctype}{
+  \ifdefstring{\documenttype}{report}{
+    \renewcommand{\type}{Seminar Thesis:}
+  }{
+  \ifdefstring{\documenttype}{proposal}{
+    \renewcommand{\type}{Research Proposal:}
+  }{
+  \ifdefstring{\documenttype}{thesis}{%
+    \renewcommand{\type}{\vspace{0.01cm}}
+  }{
+    \PackageError{setup}{Invalid document type}
+      {Allowed values: report, research proposal, thesis}%
+  }}}
+}
+\applydoctype
+

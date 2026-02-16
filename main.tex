@@ -1,0 +1,41 @@
+\documentclass[11pt, a4paper]{article}
+
+%Load Metadata
+\input{1.Metadata/metadata}
+\input{1.Metadata/packages}
+\input{1.Metadata/setup}
+\input{1.Metadata/acronyms-definitions}
+
+
+\begin{document}
+
+\pagenumbering{roman}
+\input{2.Frontmatter/titlepage}
+\include{2.Frontmatter/declaration_page}
+\include{2.Frontmatter/abstract}
+\include{2.Frontmatter/toc}         % Table of Contents
+\include{2.Frontmatter/loa}         % List of Abbreviations
+% \include{2.Frontmatter/los}         % List of Symbols
+\include{2.Frontmatter/lot}         % List of Tables
+\include{2.Frontmatter/lof}         % List of Figures
+
+\cleardoublepage
+\pagenumbering{arabic}
+\include{3.Mainmatter/i.introduction}
+\include{3.Mainmatter/ii.methods}
+\include{3.Mainmatter/iii.results}
+\include{3.Mainmatter/iv.discussion}
+\include{3.Mainmatter/v.conclusions}
+
+\input{4.Backmatter/conflict_of_interest}
+\input{4.Backmatter/acknowledgements}
+% \input{4.Backmatter/author_contributions}
+\input{4.Backmatter/funding}
+\include{4.Backmatter/references}
+
+\begin{appendices}
+    \include{5.Appendix/appendix_a}
+\end{appendices}
+
+\end{document}
+
