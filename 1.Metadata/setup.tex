@@ -48,8 +48,14 @@
 
 \newcommand{\submissiondate}{\submissionmonth~\submissionyear}
 
-\newcommand{\type}{report}
+\newcommand{\type}{article}
 \newcommand{\applydoctype}{
+  \ifdefstring{\documenttype}{article}{
+    \renewcommand{\type}{Article:}
+    \setcounter{secnumdepth}{0}
+    \geometry{twoside}
+
+  }{
   \ifdefstring{\documenttype}{report}{
     \renewcommand{\type}{Seminar Thesis:}
   }{
@@ -60,8 +66,124 @@
     \renewcommand{\type}{\vspace{0.01cm}}
   }{
     \PackageError{setup}{Invalid document type}
-      {Allowed values: report, research proposal, thesis}%
-  }}}
+      {Allowed values: article, report, proposal, thesis}%
+  }}}}
 }
 \applydoctype
 
+
+\newcommand{\includefrontmatter}{
+  \ifdefstring{\documenttype}{article}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{report}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{proposal}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{thesis}{%
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+    
+  }{
+    \PackageError{setup}{Invalid document type}
+      {Allowed values: article, report, proposal, thesis}%
+  }}}}
+}
+
+
+\newcommand{\includemaincontent}{
+  \ifdefstring{\documenttype}{article}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{report}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{proposal}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{thesis}{%
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+    \PackageError{setup}{Invalid document type}
+      {Allowed values: article, report, proposal, thesis}%
+  }}}}
+}
+
+
+\newcommand{\includebackmatter}{
+  \ifdefstring{\documenttype}{article}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{report}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{proposal}{
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+
+  }{
+  \ifdefstring{\documenttype}{thesis}{%
+    \include{3.Mainmatter/i.introduction}
+    \include{3.Mainmatter/ii.methods}
+    \include{3.Mainmatter/iii.results}
+    \include{3.Mainmatter/iv.discussion}
+    \include{3.Mainmatter/v.conclusions}
+    
+  }{
+    \PackageError{setup}{Invalid document type}
+      {Allowed values: article, report, proposal, thesis}%
+  }}}}
+}

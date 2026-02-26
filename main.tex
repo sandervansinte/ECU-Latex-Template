@@ -10,6 +10,8 @@
 \begin{document}
 
 \pagenumbering{roman}
+\includefrontmatter
+
 \input{2.Frontmatter/titlepage}
 \include{2.Frontmatter/declaration_page}
 \include{2.Frontmatter/abstract}
@@ -21,17 +23,15 @@
 
 \cleardoublepage
 \pagenumbering{arabic}
-\include{3.Mainmatter/i.introduction}
-\include{3.Mainmatter/ii.methods}
-\include{3.Mainmatter/iii.results}
-\include{3.Mainmatter/iv.discussion}
-\include{3.Mainmatter/v.conclusions}
+\includemaincontent
 
-\input{4.Backmatter/conflict_of_interest}
-\input{4.Backmatter/acknowledgements}
+\includebackmatter
+
+% \input{4.Backmatter/conflict_of_interest}
+% \input{4.Backmatter/acknowledgements}
 % \input{4.Backmatter/author_contributions}
-\input{4.Backmatter/funding}
-\include{4.Backmatter/references}
+% \input{4.Backmatter/funding}
+% \include{4.Backmatter/references}
 
 \begin{appendices}
     \include{5.Appendix/appendix_a}
