@@ -54,7 +54,9 @@
     \renewcommand{\type}{Article:}
     \setcounter{secnumdepth}{0}
     \geometry{twoside}
-
+  }{
+    \ifdefstring{\documenttype}{custom}{
+    \renewcommand{\type}{\vspace{0.01cm}}
   }{
   \ifdefstring{\documenttype}{report}{
     \renewcommand{\type}{Seminar Thesis:}
@@ -62,128 +64,141 @@
   \ifdefstring{\documenttype}{proposal}{
     \renewcommand{\type}{Research Proposal:}
   }{
-  \ifdefstring{\documenttype}{thesis}{%
+  \ifdefstring{\documenttype}{bsc-msc}{%
+    \renewcommand{\type}{\vspace{0.01cm}}
+  }{
+    \ifdefstring{\documenttype}{phd}{%
     \renewcommand{\type}{\vspace{0.01cm}}
   }{
     \PackageError{setup}{Invalid document type}
-      {Allowed values: article, report, proposal, thesis}%
-  }}}}
+      {Allowed values: article, custom, report, proposal, bsc-msc, phd}%
+  }}}}}}
 }
 \applydoctype
 
 
-\newcommand{\includefrontmatter}{
+\newcommand{\includepreset}{
   \ifdefstring{\documenttype}{article}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
+    \pagenumbering{arabic}
+    \input{2.Frontmatter/titlepage}
+    \input{2.Frontmatter/abstract}
+
+    \input{3.Mainmatter/i.introduction}
+    \input{3.Mainmatter/ii.methods}
+    \input{3.Mainmatter/iii.results}
+    \input{3.Mainmatter/iv.discussion}
+    \input{3.Mainmatter/v.conclusions}
+
+    \input{4.Backmatter/conflict_of_interest}
+    \input{4.Backmatter/acknowledgements}
+    \input{4.Backmatter/author_contributions}
+    \input{4.Backmatter/funding}
+    \include{4.Backmatter/references}
+  }{
+    \ifdefstring{\documenttype}{custom}{
 
   }{
   \ifdefstring{\documenttype}{report}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
+    \pagenumbering{roman}
+    \input{2.Frontmatter/titlepage}
+    \include{2.Frontmatter/declaration_page}
+    \include{2.Frontmatter/abstract}
+    \include{2.Frontmatter/toc}         
+    \include{2.Frontmatter/loa}        
+    \include{2.Frontmatter/los}    
+    \include{2.Frontmatter/lot}         
+    \include{2.Frontmatter/lof}   
+    
+    \cleardoublepage
+    \pagenumbering{arabic}
+
+    \input{3.Mainmatter/i.introduction}
+    \input{3.Mainmatter/ii.methods}
+    \input{3.Mainmatter/iii.results}
+    \input{3.Mainmatter/iv.discussion}
+    \input{3.Mainmatter/v.conclusions}
+
+    \include{4.Backmatter/references}
 
   }{
   \ifdefstring{\documenttype}{proposal}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
+    \pagenumbering{arabic}
+    \input{2.Frontmatter/titlepage}
+    \include{2.Frontmatter/declaration_page}
+    \include{2.Frontmatter/abstract}
+    \include{2.Frontmatter/toc}         
+    \include{2.Frontmatter/loa}        
+    \include{2.Frontmatter/los}    
+    \include{2.Frontmatter/lot}         
+    \include{2.Frontmatter/lof}   
+
+    \cleardoublepage
+    \pagenumbering{arabic}    
+    
+    \input{3.Mainmatter/i.introduction}
+    \input{3.Mainmatter/ii.methods}
+    \input{3.Mainmatter/iii.results}
+    \input{3.Mainmatter/iv.discussion}
+    \input{3.Mainmatter/v.conclusions}
+
+    \input{4.Backmatter/conflict_of_interest}
+    \input{4.Backmatter/funding}
+    \include{4.Backmatter/references}
 
   }{
-  \ifdefstring{\documenttype}{thesis}{%
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
+  \ifdefstring{\documenttype}{bsc-msc}{%
+    \pagenumbering{arabic}
+    \input{2.Frontmatter/titlepage}
+    \include{2.Frontmatter/declaration_page}
+    \include{2.Frontmatter/abstract}
+    \include{2.Frontmatter/toc}         
+    \include{2.Frontmatter/loa}        
+    \include{2.Frontmatter/los}    
+    \include{2.Frontmatter/lot}         
+    \include{2.Frontmatter/lof}  
+
+    \cleardoublepage
+    \pagenumbering{arabic}      
+
+    \input{3.Mainmatter/i.introduction}
+    \input{3.Mainmatter/ii.methods}
+    \input{3.Mainmatter/iii.results}
+    \input{3.Mainmatter/iv.discussion}
+    \input{3.Mainmatter/v.conclusions}
+
+    \input{4.Backmatter/conflict_of_interest}
+    \input{4.Backmatter/acknowledgements}
+    \input{4.Backmatter/funding}
+    \include{4.Backmatter/references}
+    
+  }{
+  \ifdefstring{\documenttype}{phd}{%
+    \pagenumbering{arabic}
+    \input{2.Frontmatter/titlepage}
+    \include{2.Frontmatter/declaration_page}
+    \include{2.Frontmatter/abstract}
+    \include{2.Frontmatter/toc}         
+    \include{2.Frontmatter/loa}        
+    \include{2.Frontmatter/los}    
+    \include{2.Frontmatter/lot}         
+    \include{2.Frontmatter/lof}  
+
+    \cleardoublepage
+    \pagenumbering{arabic}      
+
+    \input{3.Mainmatter/i.introduction}
+    \input{3.Mainmatter/ii.methods}
+    \input{3.Mainmatter/iii.results}
+    \input{3.Mainmatter/iv.discussion}
+    \input{3.Mainmatter/v.conclusions}
+
+    \input{4.Backmatter/conflict_of_interest}
+    \input{4.Backmatter/acknowledgements}
+    \input{4.Backmatter/funding}
+    \include{4.Backmatter/references}
     
   }{
     \PackageError{setup}{Invalid document type}
-      {Allowed values: article, report, proposal, thesis}%
-  }}}}
-}
-
-
-\newcommand{\includemaincontent}{
-  \ifdefstring{\documenttype}{article}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-  \ifdefstring{\documenttype}{report}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-  \ifdefstring{\documenttype}{proposal}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-  \ifdefstring{\documenttype}{thesis}{%
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-    \PackageError{setup}{Invalid document type}
-      {Allowed values: article, report, proposal, thesis}%
-  }}}}
-}
-
-
-\newcommand{\includebackmatter}{
-  \ifdefstring{\documenttype}{article}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-  \ifdefstring{\documenttype}{report}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-  \ifdefstring{\documenttype}{proposal}{
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-
-  }{
-  \ifdefstring{\documenttype}{thesis}{%
-    \include{3.Mainmatter/i.introduction}
-    \include{3.Mainmatter/ii.methods}
-    \include{3.Mainmatter/iii.results}
-    \include{3.Mainmatter/iv.discussion}
-    \include{3.Mainmatter/v.conclusions}
-    
-  }{
-    \PackageError{setup}{Invalid document type}
-      {Allowed values: article, report, proposal, thesis}%
-  }}}}
+      {Allowed values: article, custom, report, proposal, bsc-msc, phd}%
+  }}}}}}
 }

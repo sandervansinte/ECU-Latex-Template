@@ -33,7 +33,7 @@
 
 % Make sure to compile all your acronyms and definitions in the acronyms-definitions.tex file (1.Metadata/acronyms-definitions.tex) if you intend to use the glossary functionality. If you do not intend to use the glossary functionality, you can simply leave the acronyms-definitions.tex file empty.  
 
-% The template is structured in a way that the main content of your document should be included in the Mainmatter folder (3.Mainmatter/). You can create as many files as you need for the different sections and include them in the setup.tex file under the section of preference or you can just easily create a custom one.
+% The template is structured in a way that the main content of your document should be included in the Mainmatter folder (3.Mainmatter/). You can create as many files as you need for the different sections and include them in the main.tex file while making sure that the custom document is selected. Additionally you'll need to comment out includepreset and uncomment the desired files in the main.
 
 % The Figures folder (6.Figures/) is meant to store all your figures. You can set the path for the figures in the setup.tex file (1.Metadata/setup.tex).
 
@@ -43,5 +43,5 @@
 
 % Update Version 1.1 (26-02-2026):
 % - Added the function to have preset layouts for the content that is loaded depending on the document type (article, custom, report, research proposal, thesis).
-% The custom document type is the default type and it requires to just requires uncommenting the lines of content you want to include and and commenting out the includefrontmatter, includemaincontent, and includebackmatter functions in the main.tex file.
+% The custom document type is the default type and it requires to just requires uncommenting the lines of content you want to include and and commenting out the includepreset function in the main.tex file.
 % - Selecting a document type will now result in custom formatting and titlepages. For example, articles will uniquely not have a title page, also, the sections will not be numbered, and the document will be formatted in a double column style. 
