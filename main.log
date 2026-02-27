@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  27 FEB 2026 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  27 FEB 2026 18:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -795,22 +795,6 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@delta=\dimen289
 \TX@cols=\count513
 \TX@ftn=\toks43
-) (c:/texlive/2025/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2022/07/23 v1.10.1
-Package textpos Info: choosing support for LaTeX3 on input line 60.
-\TP@textbox=\box113
-\TP@holdbox=\box114
-\TPHorizModule=\dimen290
-\TPVertModule=\dimen291
-\TP@margin=\dimen292
-\TP@absmargin=\dimen293
-
-Grid set 16 x 16 = 37.34424pt x 52.81541pt
-\TPboxrulesize=\dimen294
-\TP@ox=\dimen295
-\TP@oy=\dimen296
-\TP@tbargs=\toks44
-TextBlockOrigin set to 0pt x 0pt
 ) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
  (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -850,7 +834,7 @@ Package glossaries Info: Writing glossary file main.glo-abr on input line 40.
 ) (./1.Metadata/acronyms-definitions.tex)
 \@quotelevel=\count514
 \@quotereset=\count515
- (./main.aux (./4.Backmatter/references.aux))
+ (./main.aux (./2.Frontmatter/declaration_page.aux) (./2.Frontmatter/abstract.aux) (./2.Frontmatter/toc.aux) (./2.Frontmatter/loa.aux) (./2.Frontmatter/los.aux) (./2.Frontmatter/lot.aux) (./2.Frontmatter/lof.aux) (./4.Backmatter/references.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -906,8 +890,8 @@ Package biblatex Info: Reference section=0 on input line 10.
 Package biblatex Info: Reference segment=0 on input line 10.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen297
-\caption@adjustwidth@linewidth=\dimen298
+\caption@adjustwidth@hsize=\dimen290
+\caption@adjustwidth@linewidth=\dimen291
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -954,16 +938,16 @@ Package caption Info: End \AtBeginDocument code.
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count516
-\scratchdimen=\dimen299
-\scratchbox=\box115
+\scratchdimen=\dimen292
+\scratchbox=\box113
 \nofMPsegments=\count517
 \nofMParguments=\count518
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks44
 \MPscratchCnt=\count519
-\MPscratchDim=\dimen300
+\MPscratchDim=\dimen293
 \MPnumerator=\count520
 \makeMPintoPDFobject=\count521
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks45
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -975,59 +959,264 @@ Package hyperref Info: Link coloring OFF on input line 10.
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
- (./2.Frontmatter/article-titlepage.tex
-<6.Figures/SMHS-LOGO_PRIMARY_RGB.png, id=60, 616.9449pt x 224.037pt>
-File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
-<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
-Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 3.
-(pdftex.def)             Requested size: 128.0374pt x 46.49535pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+ (./2.Frontmatter/titlepage.tex
+<6.Figures/ECU-LOGO_PRIMARY_RGB.png, id=76, 565.6332pt x 448.5558pt>
+File: 6.Figures/ECU-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/ECU-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/ECU-LOGO_PRIMARY_RGB.png  used on input line 7.
+(pdftex.def)             Requested size: 128.0374pt x 101.53668pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) (./2.Frontmatter/article-abstract.tex) (./3.Mainmatter/i.introduction.tex
-Overfull \hbox (10.41797pt too wide) in paragraph at lines 10--11
-[]\OT1/cmr/m/n/10.95 2lorem Au-thore-tal20XX lorem lorem lorem
- []
-
-[1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+) [1
 
 \openout4 = `main.ist'.
 
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./6.Figures/ECU-LOGO_PRIMARY_RGB.png>])
+\openout2 = `2.Frontmatter/declaration_page.aux'.
 
- <./6.Figures/SMHS-LOGO_PRIMARY_RGB.png>]
-<6.Figures/ECU-LOGO_PRIMARY_RGB.png, id=79, 565.6332pt x 448.5558pt>
+ (./2.Frontmatter/declaration_page.tex
+<6.Figures/SMHS-LOGO_PRIMARY_RGB.png, id=88, 616.9449pt x 224.037pt>
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 32.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[2
+
+
+{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./6.Figures/SMHS-LOGO_PRIMARY_RGB.png>])
+\openout2 = `2.Frontmatter/abstract.aux'.
+
+ (./2.Frontmatter/abstract.tex)
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[3
+
+
+
+
+]
+\openout2 = `2.Frontmatter/toc.aux'.
+
+ (./2.Frontmatter/toc.tex (./main.toc)
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+)
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[4
+
+
+
+]
+\openout2 = `2.Frontmatter/loa.aux'.
+
+ (./2.Frontmatter/loa.tex (./main.gls-abr))
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[5
+
+
+
+]
+\openout2 = `2.Frontmatter/los.aux'.
+
+ (./2.Frontmatter/los.tex (./main.sls))
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[6
+
+
+
+]
+\openout2 = `2.Frontmatter/lot.aux'.
+
+ (./2.Frontmatter/lot.tex (./main.lot)
+\tf@lot=\write10
+\openout10 = `main.lot'.
+
+)
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[7
+
+
+
+]
+\openout2 = `2.Frontmatter/lof.aux'.
+
+ (./2.Frontmatter/lof.tex (./main.lof)
+\tf@lof=\write11
+\openout11 = `main.lof'.
+
+)
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+[8
+
+
+
+] (./3.Mainmatter/i.introduction.tex
 File: 6.Figures/ECU-LOGO_PRIMARY_RGB.png Graphic file (type png)
 <use 6.Figures/ECU-LOGO_PRIMARY_RGB.png>
 Package pdftex.def Info: 6.Figures/ECU-LOGO_PRIMARY_RGB.png  used on input line 52.
-(pdftex.def)             Requested size: 208.39568pt x 165.25806pt.
-) (./3.Mainmatter/ii.methods.tex) (./3.Mainmatter/iii.results.tex [2 <./6.Figures/ECU-LOGO_PRIMARY_RGB.png>]
-Underfull \vbox (badness 4940) has occurred while \output is active []
-
-) (./3.Mainmatter/iv.discussion.tex [3]) (./3.Mainmatter/v.conclusions.tex) (./4.Backmatter/conflict_of_interest.tex) (./4.Backmatter/acknowledgements.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--1
-
- []
-
-) (./4.Backmatter/author_contributions.tex
-Overfull \hbox (5.25122pt too wide) in paragraph at lines 2--1
-\OT1/cmr/m/n/10.95 for ex-am-ple: edit-ing ser-vices, a re-search assis-
- []
+(pdftex.def)             Requested size: 426.79135pt x 338.45564pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--1
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
+) (./3.Mainmatter/ii.methods.tex
+Underfull \vbox (badness 6927) has occurred while \output is active []
 
-) (./4.Backmatter/funding.tex
-Overfull \hbox (40.16966pt too wide) in paragraph at lines 2--1
-\OT1/cmr/m/n/10.95 iza-tion, method-ol-ogy, and writ-ing of this manuscript.
- []
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 6.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \end{align}
+                [1
+
+
+
+]) (./3.Mainmatter/iii.results.tex
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 1.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \section
+            {Results} [2]
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 13.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 3
+      lorem ipsumlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ... [3]) (./3.Mainmatter/iv.discussion.tex) (./3.Mainmatter/v.conclusions.tex
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 6.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \end{align}
+                [4]) (./4.Backmatter/conflict_of_interest.tex) (./4.Backmatter/funding.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
@@ -1037,45 +1226,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
  []
 
-[4] [5
+File: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png Graphic file (type png)
+<use 6.Figures/SMHS-LOGO_PRIMARY_RGB.png>
+Package pdftex.def Info: 6.Figures/SMHS-LOGO_PRIMARY_RGB.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 30.99576pt.
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 35.07579pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.07579pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-23.07579pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \includepreset
+                    [5]
 \openout2 = `4.Backmatter/references.aux'.
 
  (./4.Backmatter/references.tex
 
 LaTeX Warning: Empty bibliography on input line 1.
 
-)
-
-Package glossaries Warning: No \printglossary or \printglossaries found. 
-(Remove \makeglossaries if you don't want any glossaries.) 
-This document will not have a glossary.
-
-(./main.aux (./4.Backmatter/references.aux))
+) (./main.aux (./2.Frontmatter/declaration_page.aux) (./2.Frontmatter/abstract.aux) (./2.Frontmatter/toc.aux) (./2.Frontmatter/loa.aux) (./2.Frontmatter/los.aux) (./2.Frontmatter/lot.aux) (./2.Frontmatter/lof.aux) (./4.Backmatter/references.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9AD75F68064ACCACA42B3D980563F425;1233.
+(rerunfilecheck)             Checksum: 855293D46D98C090F17287B0525847F9;1784.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31239 strings out of 467538
- 600054 string characters out of 5423725
- 1679799 words of memory out of 5000000
- 59736 multiletter control sequences out of 15000+600000
- 635493 words of font info for 68 fonts, out of 8000000 for 9000
+ 31341 strings out of 467538
+ 603885 string characters out of 5423725
+ 1690682 words of memory out of 5000000
+ 59778 multiletter control sequences out of 15000+600000
+ 638088 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,11n,101p,2644b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (5 pages, 238775 bytes).
+ 82i,16n,101p,2644b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (13 pages, 281801 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
