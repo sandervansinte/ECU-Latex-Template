@@ -1,16 +1,57 @@
 \section{Introduction}\label{intro}
 
+1lorem \gls{example} ipsum. lorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim
+
 \begin{align}
     y &= f(x)\\
     &= \sum_{i=1}^I x_i^2
 \end{align}
 
-
-1lorem \gls{example} ipsum. lorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim
-
-2lorem \cite{apte2021BiomechanicalResponseLower} lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim
+2lorem Authoretal20XX lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim
 
 3lorem \gls{m} \glssymbol{m} ipsumlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim
 
 \subsection{test1}
+4 lorem ipsumlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim lorem ipsumlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem ipsumlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem ipsumlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsimlorem lorem lorem lorem ipsum ipsim
+
+\begin{table} % Single column table
+	\caption{Example single column table.\label{tab:example}}
+	\centering
+	\begin{tabular}{l l r}
+		\toprule
+		\multicolumn{2}{c}{Location} \\
+		\cmidrule(r){1-2}
+		East Distance & West Distance & Count \\
+		\midrule
+		100km & 200km & 422 \\
+		350km & 1000km & 1833 \\
+		600km & 1200km & 890 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table*} % Full width table (notice the starred environment. same logic applies to figures)
+	\caption{Example two column table with fixed-width columns.}
+	\centering % Horizontally center the table
+	\begin{tabular}{>{\raggedright\arraybackslash}p{0.2\linewidth} >{\raggedright\arraybackslash}p{0.2\linewidth} >{\raggedleft\arraybackslash}p{0.15\linewidth}} % Manually specify column alignments with fixed-width columns
+		\toprule
+		\multicolumn{2}{c}{Location} \\
+		\cmidrule(r){1-2}
+		East Distance & West Distance & Count \\
+		\midrule
+		100km & 200km & 422 \\
+		350km & 1000km & 1833 \\
+		600km & 1200km & 890 \\
+		\bottomrule
+	\end{tabular}
+\end{table*}
+
+See Table \ref{tab:example}.
+
+\begin{figure}[h] % Single column figure 
+	\includegraphics[width=\linewidth]{6.Figures/ECU-LOGO_PRIMARY_RGB.png}
+	\caption{this is the figure caption}
+	\label{fig:tcanther}
+\end{figure}
+
 
