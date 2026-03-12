@@ -12,10 +12,12 @@
     left=3cm,
     right=3cm,
     top=3cm,
-    bottom=3cm
+    bottom=3cm,
+    headheight=36pt
 } 
 
 % ------------------------------------------------------------
+
 
 \makeatletter
     \let\thetitle\@title
@@ -45,9 +47,9 @@
 \newcommand{\type}{article}
 \newcommand{\applydoctype}{
   \ifdefstring{\documenttype}{article}{
-    
     \pagestyle{fancy}
-    \fancyhf{}
+    \fancyhf{}    
+    \addtolength{\topmargin}{-24pt}
     \renewcommand{\headrulewidth}{0pt}
     \fancyfoot[RO,LE]{\thepage}
   }{
@@ -56,31 +58,41 @@
   }{
   \ifdefstring{\documenttype}{report}{
     \renewcommand{\type}{Seminar Thesis:}
-    \setcounter{secnumdepth}{0}
+    \pagestyle{fancy}
+    \fancyhf{}    
+    % \addtolength{\topmargin}{-24pt}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[RO,RE]{\thepage}
   }{
   \ifdefstring{\documenttype}{proposal}{
     \renewcommand{\type}{Research Proposal:}
     \pagestyle{fancy}
     \fancyhf{}
-    \fancyhead[R]{\includegraphics[width=3cm]{\headerlogo}}
     \renewcommand{\headrulewidth}{0pt}
-    \fancyfoot[RO,LE]{\thepage}
+    \fancyfoot[CO,CE]{\thepage}
   }{
-  \ifdefstring{\documenttype}{bsc-msc}{%
+  \ifdefstring{\documenttype}{bsc-msc}{
     \renewcommand{\type}{\vspace{0.01cm}}
     \pagestyle{fancy}
     \fancyhf{}
+    \addtolength{\topmargin}{-24pt}
     \fancyhead[R]{\includegraphics[width=3cm]{\headerlogo}}
     \renewcommand{\headrulewidth}{0pt}
-    \fancyfoot[RO,LE]{\thepage}
+    \fancyfoot[LO,RE]{\thepage}
   }{
-    \ifdefstring{\documenttype}{phd}{%
+    \ifdefstring{\documenttype}{phd}{
     \renewcommand{\type}{\vspace{0.01cm}}
     \pagestyle{fancy}
     \fancyhf{}
-    \fancyhead[R]{\includegraphics[width=3cm]{\headerlogo}}
+    \addtolength{\topmargin}{-24pt}
     \renewcommand{\headrulewidth}{0pt}
-    \fancyfoot[RO,LE]{\thepage}
+    \fancyfoot[LO,RE]{\thepage}
+
+    \fancypagestyle{plain}{
+      \fancyhf{}
+      \renewcommand{\headrulewidth}{0pt}
+      \fancyfoot[LO,RE]{\thepage}
+    }
   }{
     \PackageError{setup}{Invalid document type}
       {Allowed values: article, custom, report, proposal, bsc-msc, phd}%
@@ -107,7 +119,7 @@
     \input{4.Backmatter/acknowledgements}
     \input{4.Backmatter/author_contributions}
     \input{4.Backmatter/funding}
-    \include{4.Backmatter/references}
+    \input{4.Backmatter/references}
     
   }{
     \ifdefstring{\documenttype}{custom}{
@@ -116,6 +128,7 @@
   \ifdefstring{\documenttype}{report}{
     \pagenumbering{roman}
     \input{2.Frontmatter/titlepage}
+    \setcounter{page}{1}
     \include{2.Frontmatter/declaration_page}
     \include{2.Frontmatter/abstract}
     \include{2.Frontmatter/toc}         
@@ -124,7 +137,6 @@
     \include{2.Frontmatter/lot}         
     \include{2.Frontmatter/lof}   
     
-    \cleardoublepage
     \pagenumbering{arabic}
 
     \input{3.Mainmatter/i.introduction}
@@ -137,8 +149,9 @@
 
   }{
   \ifdefstring{\documenttype}{proposal}{
-    \pagenumbering{arabic}
+    \pagenumbering{roman}
     \input{2.Frontmatter/titlepage}
+    \setcounter{page}{1}
     \include{2.Frontmatter/declaration_page}
     \include{2.Frontmatter/abstract}
     \include{2.Frontmatter/toc}         
@@ -147,23 +160,24 @@
     \include{2.Frontmatter/lot}         
     \include{2.Frontmatter/lof}   
 
-    \cleardoublepage
+    \clearpage
     \pagenumbering{arabic}    
     
     \input{3.Mainmatter/i.introduction}
     \input{3.Mainmatter/ii.methods}
-    \input{3.Mainmatter/iii.results}
-    \input{3.Mainmatter/iv.discussion}
-    \input{3.Mainmatter/v.conclusions}
+    \input{3.Mainmatter/x.quality_considerations}
+    \include{3.Mainmatter/xi.budget}
 
-    \input{4.Backmatter/conflict_of_interest}
-    \input{4.Backmatter/funding}
+    \include{4.Backmatter/funding}
+    \include{4.Backmatter/acknowledgements}
+    \include{4.Backmatter/conflict_of_interest}
     \include{4.Backmatter/references}
 
   }{
-  \ifdefstring{\documenttype}{bsc-msc}{%
-    \pagenumbering{arabic}
+  \ifdefstring{\documenttype}{bsc-msc}{
+    \pagenumbering{roman}
     \input{2.Frontmatter/titlepage}
+    \setcounter{page}{1}
     \include{2.Frontmatter/declaration_page}
     \include{2.Frontmatter/abstract}
     \include{2.Frontmatter/toc}         
@@ -187,33 +201,75 @@
     \include{4.Backmatter/references}
     
   }{
-  \ifdefstring{\documenttype}{phd}{%
-    \pagenumbering{arabic}
+  \ifdefstring{\documenttype}{phd}{
+    \pagenumbering{roman}
     \input{2.Frontmatter/titlepage}
+    \setcounter{page}{1}
     \include{2.Frontmatter/declaration_page}
     \include{2.Frontmatter/abstract}
     \include{2.Frontmatter/toc}         
     \include{2.Frontmatter/loa}        
     \include{2.Frontmatter/los}    
-    \include{2.Frontmatter/lot}         
-    \include{2.Frontmatter/lof}  
+    \include{2.Frontmatter/phd-lot}         
+    \include{2.Frontmatter/phd-lof}  
 
     \cleardoublepage
-    \pagenumbering{arabic}      
+    \pagenumbering{arabic}
 
-    \input{3.Mainmatter/i.introduction}
-    \input{3.Mainmatter/ii.methods}
-    \input{3.Mainmatter/iii.results}
-    \input{3.Mainmatter/iv.discussion}
-    \input{3.Mainmatter/v.conclusions}
+    \include{3.Mainmatter/PhD/Chapter_1/c1}
+    \include{3.Mainmatter/PhD/Chapter_2/c2}
+    \include{3.Mainmatter/PhD/Chapter_3/c3}
+    \include{3.Mainmatter/PhD/Chapter_4/c4}
+    \include{3.Mainmatter/PhD/Chapter_5/c5}
 
     \input{4.Backmatter/conflict_of_interest}
     \input{4.Backmatter/acknowledgements}
     \input{4.Backmatter/funding}
+    \input{4.Backmatter/copyright_statement}
+    \input{4.Backmatter/confidentiality_statement}
+    \input{4.Backmatter/statement_of_attribution}
+    \input{4.Backmatter/funding}
     \include{4.Backmatter/references}
-    
+    \include{4.Backmatter/lop}
+      
   }{
     \PackageError{setup}{Invalid document type}
       {Allowed values: article, custom, report, proposal, bsc-msc, phd}%
   }}}}}}
 }
+
+
+\newcommand{\headingformat}[1]{
+  \ifdefstring{\documenttype}{phd}{
+    \chapter*{#1}
+  }{
+    \section*{#1}
+  }
+}
+\newcommand{\headingformattoc}[1]{
+  \headingformat{#1}
+  \ifdefstring{\documenttype}{phd}{
+    \addcontentsline{toc}{chapter}{#1}
+  }{
+    \addcontentsline{toc}{section}{#1}
+  }
+}
+% \newcommand{\numheadingformat}[1]{
+%   \ifdefstring{\documenttype}{phd}{
+%     \chapter{#1}
+%   }{
+%     \section{\huge#1}
+%   }
+% }
+% \newcommand{\numheadingformattoc}[1]{
+%   \numheadingformat{#1}
+%   \ifdefstring{\documenttype}{phd}{
+%     \addcontentsline{toc}{chapter}{#1}
+%   }{
+%     \addcontentsline{toc}{section}{#1}
+%   }
+% }
+
+% \newcommand{\headingsize}{
+%   \ifdefstring{\documenttype}{phd}{}{\huge}
+% }

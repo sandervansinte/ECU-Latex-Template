@@ -1,8 +1,13 @@
-\documentclass[11pt, a4paper, twoside]{article}
+\documentclass[a4paper, 11pt, twoside,
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+]{article} %if you want to use the \documenttype phd change the \documentclass from article to report
+
+\def\documenttype{proposal} % article, custom, report, proposal (research proposal), bsc-msc (thesis), phd (thesis)
+
 
 %Load Metadata
-\input{1.Metadata/metadata}
 \input{1.Metadata/packages}
+\input{1.Metadata/metadata}
 \input{1.Metadata/setup}
 \input{1.Metadata/acronyms-definitions}
 
@@ -13,6 +18,7 @@
 % \pagenumbering{roman}
 
 % \input{2.Frontmatter/titlepage}
+% \setcounter{page}{1}
 % \include{2.Frontmatter/declaration_page}
 % \include{2.Frontmatter/abstract}
 % \include{2.Frontmatter/toc}         % Table of Contents
