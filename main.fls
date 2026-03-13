@@ -303,6 +303,11 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT main.bcf
+INPUT main.bbl
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT main.bbl
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
